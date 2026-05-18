@@ -1,24 +1,27 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "victormgomes/g11n",
+    "description": "All-in-one globalization for Laravel",
     "keywords": [
-        ":vendor_name",
+        "Victor M. Gomes",
         "laravel",
-        ":package_slug"
+        "g11n"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/victormgomes/g11n",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Victor M. Gomes",
+            "email": "info@victormgomes.net",
             "role": "Developer"
         }
     ],
     "require": {
         "php": "^8.4",
         "spatie/laravel-package-tools": "^1.16",
-        "illuminate/contracts": "^11.0||^12.0||^13.0"
+        "illuminate/contracts": "^11.0||^12.0||^13.0",
+        "pragmarx/countries": "^1.0.2",
+        "propaganistas/laravel-phone": "^6.0.3",
+        "akaunting/laravel-money": "^6.0.3"
     },
     "require-dev": {
         "laravel/pint": "^1.14",
@@ -35,13 +38,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "Victormgomes\\G11n\\": "src/",
+            "Victormgomes\\G11n\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/",
+            "Victormgomes\\G11n\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -63,10 +66,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Victormgomes\\G11n\\G11nServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "G11n": "Victormgomes\\G11n\\Facades\\G11n"
             }
         }
     },

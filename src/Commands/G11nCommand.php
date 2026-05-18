@@ -1,12 +1,14 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+declare(strict_types=1);
+
+namespace Victormgomes\G11n\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class G11nCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'g11n';
 
     public $description = 'My command';
 
